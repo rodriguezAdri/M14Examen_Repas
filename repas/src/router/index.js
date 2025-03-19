@@ -1,15 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import EmbassamentList from '@/components/EmbassamentList.vue';
-import EmbassamentDetall from '@/components/EmbassamentDetall.vue';
+import HomeView from '../views/HomeView.vue';
+import AiguaView from '../views/AiguaView.vue';
+import CompraView from '../views/CompraView.vue';
+import DetallEmbassament from '../components/DetallEmbassament.vue';
 
 const routes = [
-  { path: '/', name: 'embassamentList', component: EmbassamentList },
-  { path: '/embassament/:nom', name: 'embassamentDetall', component: EmbassamentDetall, props: true }
+  { path: '/', component: HomeView },
+  { path: '/aigua', component: AiguaView },
+  { path: '/compra', component: CompraView },
+  { path: '/aigua/:nomEmbassament', component: DetallEmbassament, props: true },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
 });
 
-export default router
+export default router;

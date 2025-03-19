@@ -3,13 +3,13 @@
   <nav>
     <ul>
       <li>
-        <router-link :to="`/home`">Home</router-link>
+        <router-link :to="`/`">Home</router-link>
       </li>
       <li>
         <router-link :to="`/aigua`">Aigua</router-link>
       </li>
       <li>
-        <router-link :to="`/llistaCompra`">Llista Compra</router-link>
+        <router-link :to="`/compra`">Llista Compra</router-link>
       </li>
     </ul>
   </nav>

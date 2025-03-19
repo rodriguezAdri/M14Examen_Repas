@@ -1,7 +1,7 @@
 <template>
-    <Navegador />
-    <h1>Home View</h1>
+   
     <div>
+        <h1>Home View</h1>
         <ul>
             <li>Desenvolupa aquest projecte Vue 3 amb composition api script setup. No pots fer servir qualsevol altra
                 opció sintàctica.</li>
@@ -14,16 +14,18 @@
 
 </template>
 
+<script setup>
+</script>
+
 <style scoped>
 h1 {
     text-align: center;
 }
-
-ul {
-    padding: 0;
-}
-
 li {
+    margin: 1rem;
+}
+div {
+    width: 55%;
     margin: 1rem;
 }
 </style>
